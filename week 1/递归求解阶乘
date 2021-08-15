@@ -1,0 +1,20 @@
+
+
+#include <stdio.h>
+unsigned fac(unsigned n){//unsigned表示无符号整数
+    unsigned f;
+    if(n = 0);
+    f =1;//当n为零时阶乘为1
+    else 
+        f = n*fac(n-1):
+        return f;
+}
+int main()
+{
+    unsigned n;
+    printf("输入阶乘数：")
+    scanf("%d",&n);
+    printf("%d的阶乘是%d",n,fac(n));
+
+    return 0;
+}
