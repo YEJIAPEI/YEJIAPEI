@@ -1,0 +1,19 @@
+#include<stdio.h>
+int abc(int u, int v)
+{
+	int w;
+	while (v)
+	{
+		w = u % v;
+		u = v;
+		v = w;
+	}
+	return u;
+}
+int main()
+{
+	int a = 128, b = 48, c;
+	c = abc(a, b);
+	printf("%d和%d的最大公因数为%d\n", a, b,c);
+	return 0;
+}
